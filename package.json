@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.7"
+  },
+  "name": "team-profile-generator",
+  "description": "A comman-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielWestiner/team-profile-generator.git"
+  },
+  "author": "Daniel Westiner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielWestiner/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/DanielWestiner/team-profile-generator#readme"
+}
