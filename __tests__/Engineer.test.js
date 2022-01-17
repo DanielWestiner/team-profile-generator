@@ -14,7 +14,7 @@ describe('Engineer', () => {
       expect(testEngineer.getGithub()).toBe(userName);
     });
 
-    it('should return correct role, Manager, when using getRole()', () => {
+    it('should return correct role, Engineer, when using getRole()', () => {
         const testRole = "Engineer";
         const testEngineer = new Engineer("John", "01", "john@john.biz", "Github Username");
       expect(testEngineer.getRole()).toBe(testRole);
