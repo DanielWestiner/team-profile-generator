@@ -1,23 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
-
 const Employee = require('./lib/employee')
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
-
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputDir = path.resolve(__dirname, "output");
+const outputPath = path.join(outputDir, "team.html");
 
 const generateHTML = require("./output/generateHTML");
 let teamProfile = [];
-
-
-const renderHTML = () => {
-    console.log("Team profile successfully created!");
-    fs.writeToFile(outputPath, generateHTML(teamProfile), "UTF-8");
-};
 
 
 function init() {
@@ -148,7 +140,9 @@ function init() {
 
     function renderHTML() {
         console.log("Team profile successfully created!")
-        fs.writeFile(outputPath, generateHTML(teamProfile), "UTF-8")
+        fs.writeFile(outputPath, generateHTML(teamProfile), (err) => {
+            if (err) throw err;
+        });
     };
 
     // const writeToFile = (fileName, data) => {
@@ -157,19 +151,30 @@ function init() {
     //         err ? console.log(err) : console.log("You've successfully created the team profile!");;
     //     });
     // };
+
+
+    // const renderHTML = (fileName, data) => {
+    //     fs.writeFile(fileName, data, (err) =>
+    //     {
+    //         err ? console.log(err) : console.log("You've successfully created the team profile!");;
+    //     });
+    // };
+    
+    
+    
+    // function to initialize app
+    
+    // const init = () => {
+    //     buildTeam()
+    //     .then((userResponses) => renderHTML("./output/team.html", generateHTML(teamProfile)))
+    // }
+
+
+
     
     buildTeam();
     
-    // // function to initialize app
-    
-    // const init = () => {
-    //     inqPrompts()
-    //     .then((teamProfile) => writeToFile("./generated-readme/README.md", generateHTML(teamProfile)))
     }
-
-
-    
-
 
 
 
