@@ -2,7 +2,7 @@
 
 ## Description
 
-This project was to create a team profile generator by using command-line features with node and the inquirer npm to generate html of the selected user input. By dynamically generating and capturing  a user's feedback to prompted questions, a user can get a high-quality file created. Tests were also written to help determine any issues that could arise in the code.
+This project was to create a team profile generator by using command-line features with node and the inquirer npm to generate html of the selected user input. By dynamically generating and capturing  a user's feedback to prompted questions, a user can get a high-quality file created. Tests were also written utilizing the Jest npm to help determine any issues that could arise in the code.
 
 - [Installation](#installation)
 - [Usage](#usage)
