@@ -11,13 +11,13 @@ This project was to create a team profile generator by using command-line featur
 
 ## Installation
 
-The files along with the assets folder can be used as a command-line interface using any computer based terminal instance. A video walkthrough of how the generator works and the process can be found at: 
+The files along with the assets folder can be used as a command-line interface using any computer based terminal instance. A video walkthrough of how the generator works and the process can be found at: https://drive.google.com/file/d/1eOrIIFkWm1vFxRjJu6Kqedk5hCOBn0Za/view?usp=sharing
 
 ## Usage
 
 The files can be viewed using any desktop browser for viewing.
 
-![Screenshot](./assets/professional-readme-generator-screenshot.png)
+![Screenshot](./screenshot.png)
 
 ## Credits
 
