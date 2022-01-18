@@ -17,7 +17,7 @@ The files along with the assets folder can be used as a command-line interface u
 
 The files can be viewed using any desktop browser for viewing.
 
-![Screenshot](./screenshot.png)
+![Screenshot](./assets/screenshot.png)
 
 ## Credits
 
